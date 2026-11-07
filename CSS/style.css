@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #FFC0DE;
+}
+
+a{
+    color:#8e0849;
+    text-decoration: none;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background: #ED96D7;
+    padding: 25px;
+}
+a:hover {
+  color: #EEE3B0;
+}
+.button-69:hover {
+  opacity: .7;
+  color: #EEE3B0;
+}
+
+.button-69 {
+  background-color:  #b663c5;
+  border-radius: 5px;
+  border-style: none;
+  box-shadow: rgba(245, 244, 247, .25) 0 1px 1px inset;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 40px;
+  margin-left: -4px;
+  outline: 0;
+  text-align: center;
+  transition: all .3s cubic-bezier(.05, .03, .35, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: bottom;
+  width: 130px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.ancors{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .button-69 {
+    font-size: 14px;
+    height: 55px;
+    line-height: 55px;
+    width: 150px;
+  }
+}
