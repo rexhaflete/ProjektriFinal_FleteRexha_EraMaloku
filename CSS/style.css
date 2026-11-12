@@ -67,6 +67,26 @@ a:hover {
   width: auto;
 }
 
+.locationcard{
+  flex: 1 1 260px;
+  background: #fff;
+  padding: 22px;
+  border-radius: var(--radius);
+  border-top: 5px solid var(--purple);
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: transform .2s, box-shadow .2s;
+}
+.locationcard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(142, 30, 162, .25);
+}
+.locationcard h3 { color: var(--purple); }
+.locationcard p { line-height: 1.5; }
+.locationcard a { color: var(--blue-2); font-weight: bold; }
+
 @media screen and (max-width: 1000px) {
   .button-69 {
     font-size: 14px;
@@ -75,3 +95,4 @@ a:hover {
     width: 150px;
   }
 }
+
