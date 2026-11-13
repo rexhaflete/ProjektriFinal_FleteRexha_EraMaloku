@@ -10,6 +10,11 @@
     slide show e reviews 
     edhe footer part
     --->
+    <main>
+        <section class="hero">
+            <img src="../img/Rugova_Canyon.jpg" alt="sharri mounrain" class="home-img">
+        </section>
+    </main>
 
 
 <?php include '../Serveri/footer.php';?>
