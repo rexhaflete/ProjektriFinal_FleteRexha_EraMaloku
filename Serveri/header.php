@@ -15,7 +15,7 @@
     <a href="#aboutus">About us</a>
     <a href=""></a>
     <a href="#contactus">Contact us</a>
-    <a href="#location">Location</a>
+    <a href="../Klienti/location.php">Location</a>
     <button class="button-69">Sign up</button>
 
   </div>
