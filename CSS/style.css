@@ -3,10 +3,12 @@
     padding: 0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
     background-color: #FFC0DE;
+    scroll-behavior: smooth;
 }
 /*nav bar */
 a{
@@ -151,8 +153,25 @@ main {
 
 
 /*home page*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+}
+
 .hero {
-  
+  position: relative;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
 }
 
@@ -162,16 +181,149 @@ main {
   object-fit: cover;
   object-position: center;
   display: block;
-  height: 100vh;
 }
 
-
-@media screen and (max-width: 1000px) {
-  .button-69 {
-    font-size: 14px;
-    height: 55px;
-    line-height: 55px;
-    width: 150px;
-  }
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.5));
 }
 
+.hero-text {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 24px;
+  color: #fff;
+}
+
+.hero-text h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin: 0 0 12px;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+}
+
+.hero-text p {
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  margin: 0 0 28px;
+  max-width: 600px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero-btn,
+.dest-btn,
+.about-btn {
+  display: inline-block;
+  background: #b663c5;
+  color: #fff;
+  padding: 12px 32px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.hero-btn:hover,
+.dest-btn:hover,
+.about-btn:hover {
+  opacity: 0.85;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.home-section {
+  padding: 70px 40px;
+}
+
+.home-section h2,
+.about-teaser h2 {
+  text-align: center;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  color: #8e0849;
+  margin: 0 0 36px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dest-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dest-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(142, 30, 162, 0.25);
+}
+
+.dest-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.dest-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dest-info h3 {
+  margin: 0;
+  color: #8e1ea2;
+}
+
+.dest-info p {
+  margin: 0;
+  color: #555;
+}
+
+.dest-price {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.dest-btn {
+  align-self: flex-start;
+  margin-top: 8px;
+}
+
+.about-teaser {
+  padding: 70px 40px 90px;
+  text-align: center;
+}
+
+.about-teaser-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.about-teaser h2 {
+  margin-bottom: 16px;
+}
+
+.about-teaser p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
+  margin: 0 0 28px;
+}
+
+main.page-contant{
+  margin-top: 120px;
+}
