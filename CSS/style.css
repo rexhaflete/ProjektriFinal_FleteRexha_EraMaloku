@@ -131,7 +131,7 @@ nav {
   display: block;
   width: 26px;
   height: 3px;
-  background: #8e0849;
+  background: #f3298b9a;
   border-radius: 2px;
   transition: transform .3s, opacity .3s;
 }
@@ -147,6 +147,7 @@ nav {
 .hamburger.open span:nth-child(3) {
   transform: translateY(-9px) rotate(-45deg);
 }
+
 
 @media (max-width: 768px) {
   nav {

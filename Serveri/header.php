@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/style.css?v=<?php echo filemtime(__DIR__ . '/../CSS/style.css'); ?>">
+    <link rel="stylesheet" href="../CSS/style.css">
     <title> Prishtina Airline</title>
 </head>
 <body>
@@ -14,6 +14,12 @@
   </a>
 
   <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+    <div class="ancors" id="menu">
+    <a href="home.php" >Home</a>
+    <a href="about.php" >About us</a>
+    <a href="location.php" >Location</a>
+    <a href="#contactus">Contact us</a>
+</div>
     <span></span>
     <span></span>
     <span></span>
