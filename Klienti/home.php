@@ -1,66 +1,23 @@
-<?php include '../Serveri/header.php'; ?>
-    <!---
-    ni contact us page / help page edhe n footer
-    loacionin ton
-    destenacion page
+<?php $pageTitle = 'Home'; include '../Serveri/header.php'; ?>
+<main>
+  <section class="hero">
+    <img src="../img/Rugova_Canyon.jpg" alt="Rugova Canyon" class="home-img">
+    <div class="hero-text">
+      <h1>Fly with Prishtina Airline</h1>
+      <p>Discover Kosova and the world from the heart of the Balkans</p>
+      <a href="#" class="hero-btn">Book now</a>
+    </div>
+  </section>
 
-    te home page me shtu piken e rradhes me u bo update n baze te datave 
-    kushtet qe i jepim si kompani e fluturimit 
-    slide show e reviews 
-    edhe footer part
-    --->
-    <main >
-        <section class="hero">
-            <img src="../img/Rugova_Canyon.jpg" alt="sharri mounrain" class="home-img">
+  <section class="about-teaser" id="aboutus">
+    <div class="about-teaser-inner">
+      <h2>Who we are</h2>
+      <p>Prishtina Airline connects Kosovo with the world. We fly with care, comfort and the warmth of home, every single day.</p>
+      <a href="about.php" class="about-btn">About us</a>
+    </div>
+  </section>
 
-            <div class="hero-text">
-                <h1>Fly with Prishtina Airline</h1>
-                <p>Discover Kosova and the world from the heart of the Balkans</p>
-                <a href="#" class="hero-btn">Book now</a>
-         </div>
-        </section>
-<style>
-    
-  .about-teaser {
-    padding: 80px 40px;
-    text-align: center;
-  }
-  .about-teaser-inner {
-    max-width: 700px;
-    margin: 0 auto;
-  }
-  .about-teaser h2 {
-    font-size: 2.2rem;
-    color: #8e0849;
-    margin: 0 0 16px;
-  }
-  .about-teaser p {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: #444;
-    margin: 0 0 28px;
-  }
-  .about-btn {
-    display: inline-block;
-    background: #b663c5;
-    color: #fff;
-    padding: 14px 36px;
-    border-radius: 6px;
-    font-weight: 600;
-  }
-
-
-</style>
-
-<section class="about-teaser" id="aboutus">
-  <div class="about-teaser-inner">
-    <h2>Who we are</h2>
-    <p>Prishtina Airline connects Kosovo with the world. We fly with care, comfort and the warmth of home, every single day.</p>
-    <a href="about.php" class="about-btn">About us</a>
-  </div>
-</section>
-
-<section class="home-section">
+  <section class="home-section">
     <h2>Popular destinations</h2>
     <div class="card-grid">
       <article class="dest-card">
@@ -92,7 +49,6 @@
       </article>
     </div>
   </section>
+</main>
 
-
-
-<?php include '../Serveri/footer.php';?>
+<?php include '../Serveri/footer.php'; ?>

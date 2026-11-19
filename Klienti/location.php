@@ -1,6 +1,5 @@
-<?php include '../Serveri/header.php'; ?>
-
-<main class="page-contant" >
+<?php $pageTitle = 'Location'; include '../Serveri/header.php'; ?>
+<main class="page-main">
   <section class="location-section">
     <h1>Our Location</h1>
     <div class="location-layout">
