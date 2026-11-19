@@ -22,3 +22,15 @@ if (hamburger && menu) {
     }
   });
 }
+
+ const password = document.getElementById('password');
+    const confirmPassword = document.getElementById('confirm');
+
+    function checkMatch() {
+      confirmPassword.setCustomValidity(
+        password.value !== confirmPassword.value ? 'Passwords do not match' : ''
+      );
+    }
+
+    password.addEventListener('input', checkMatch);
+    confirmPassword.addEventListener('input', checkMatch);

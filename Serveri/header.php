@@ -17,6 +17,7 @@
     <div class="ancors" id="menu">
     <a href="home.php" >Home</a>
     <a href="about.php" >About us</a>
+    <a href="booking.php" >Book a flight</a>
     <a href="location.php" >Location</a>
     <a href="#contactus">Contact us</a>
 </div>
@@ -30,6 +31,6 @@
     <a href="about.php">About us</a>
     <a href="location.php">Location</a>
     <a href="#contactus">Contact us</a>
-    <button class="button-69" type="button">Sign up</button>
+    <button class="button-69" type="button"><a href="signup.php">Sign up</a></button>
   </div>
 </nav>
